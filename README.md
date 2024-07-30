@@ -22,8 +22,8 @@ To use the Event Blessing Generator, follow these steps:
 6. Save the blessing to your personal library for future use.
 
 ## Technologies Used
--React: The application is built using the React JavaScript library for building user interfaces.
--OpenAI: The application leverages the language generation capabilities of OpenAI to create personalized blessings.
--Styled Components: The application uses Styled Components for styling the user interface.
--Font Awesome: The application utilizes Font Awesome icons to enhance the visual experience.
+- React: The application is built using the React JavaScript library for building user interfaces.
+- OpenAI: The application leverages the language generation capabilities of OpenAI to create personalized blessings.
+- Styled Components: The application uses Styled Components for styling the user interface.
+- Font Awesome: The application utilizes Font Awesome icons to enhance the visual experience.
 
