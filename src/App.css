@@ -116,6 +116,35 @@ input[type="text"], select {
 .select-items div svg {
   margin-right: 10px;
 }
+/* src/styles.css */
+.blessings-library {
+  padding: 20px;
+}
+
+.blessing-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.blessing-preview h3 {
+  margin-top: 0;
+}
+
+.blessing-actions button {
+  margin-left: 10px;
+}
+
+.create-blessing-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
 /* .container{
 
   border: 2px solid white;

@@ -30,3 +30,4 @@ const CustomerSelect = ({ options, value, onChange, placeholder }) => {
 };
 
 export default CustomerSelect;
+
