@@ -1,4 +1,4 @@
-```
+
 # Event Blessing Generator
 
 ## Description
@@ -26,4 +26,4 @@ To use the Event Blessing Generator, follow these steps:
 -OpenAI: The application leverages the language generation capabilities of OpenAI to create personalized blessings.
 -Styled Components: The application uses Styled Components for styling the user interface.
 -Font Awesome: The application utilizes Font Awesome icons to enhance the visual experience.
-```
+
