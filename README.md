@@ -19,7 +19,6 @@ Users can access a library of their previously generated blessings, allowing the
 ## Getting Started
 To use the Event Blessing Generator, follow these steps:
 
-<<<<<<< HEAD
 Navigate to the application's website.
 Select the type of event you would like to create a blessing for.
 Fill in the required event details, such as the couple's names, the celebrant's name, and the event date.
