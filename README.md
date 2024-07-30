@@ -1,3 +1,4 @@
+```
 Event Blessing Generator
 Description
 The Event Blessing Generator is a web application that allows users to create personalized blessings for various life events, such as weddings, bar/bat mitzvahs, and birthdays. By leveraging the power of OpenAI's language generation capabilities, the application generates custom blessings tailored to the user's specific event details.
@@ -22,3 +23,4 @@ React: The application is built using the React JavaScript library for building 
 OpenAI: The application leverages the language generation capabilities of OpenAI to create personalized blessings.
 Styled Components: The application uses Styled Components for styling the user interface.
 Font Awesome: The application utilizes Font Awesome icons to enhance the visual experience.
+```
