@@ -18,19 +18,6 @@ Users can access a library of their previously generated blessings, allowing the
 
 ## Getting Started
 To use the Event Blessing Generator, follow these steps:
-
-Navigate to the application's website.
-Select the type of event you would like to create a blessing for.
-Fill in the required event details, such as the couple's names, the celebrant's name, and the event date.
-Click the "Generate Blessing" button to have the application send your event details to OpenAI and retrieve a personalized blessing.
-Review the generated blessing and make any desired changes.
-Save the blessing to your personal library for future use.
-Technologies Used
-React: The application is built using the React JavaScript library for building user interfaces.
-OpenAI: The application leverages the language generation capabilities of OpenAI to create personalized blessings.
-Styled Components: The application uses Styled Components for styling the user interface.
-Font Awesome: The application utilizes Font Awesome icons to enhance the visual experience.
-=======
 1. Navigate to the application's website.
 2. Select the type of event you would like to create a blessing for.
 3. Fill in the required event details, such as the couple's names, the celebrant's name, and the event date.
@@ -44,4 +31,4 @@ Font Awesome: The application utilizes Font Awesome icons to enhance the visual 
 - Styled Components: The application uses Styled Components for styling the user interface.
 - Font Awesome: The application utilizes Font Awesome icons to enhance the visual experience.
 
->>>>>>> 1ac45009720822c349de2906dcff9d67e8e64f4d
+
