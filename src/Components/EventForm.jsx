@@ -39,6 +39,12 @@ const EventForm = () => {
     const [currentBlessingIndex, setCurrentBlessingIndex] = useState(0);
     const [isOpen, setIsOpen] = useState(false);
 
+    const handleGenderChange = (selectedGender) => {
+        setGender(selectedGender);
+      };
+      
+      
+
     const buildPrompt = () => {
         let prompt = `כתוב ברכה ל${name}, מין:${gender},`
         prompt += ` עבור: ${event}.`;
@@ -58,7 +64,7 @@ const EventForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const prompt = buildPrompt();
-
+        console.log(prompt);
         try {
             const response = await axios.post('http://localhost:8989/prompts', { prompt });
             setBlessings(Object.values(response.data));
@@ -101,23 +107,11 @@ const EventForm = () => {
                 <form action="/promts" onSubmit={handleSubmit} >
                     <label htmlFor="age"><h3>עבור מי הברכה?</h3></label>
                     <input type="text" placeholder='שם:' id="age" value={name} onChange={(e) => setName(e.target.value)} />
-                    {/* <input type="radio" id="gender" name="gender" value="זכר" checked={gender === 'זכר'} onChange={(e) => setGender(e.target.value)} />
+                    <input type="radio" id="gender" name="gender" value="זכר" checked={gender === 'זכר'} onChange={(e) => setGender(e.target.value)} />
                     <label><FaUserCircle /> זכר</label>
                     <input type="radio" id="gender" name="gender" value="נקבה" checked={gender === 'נקבה'} onChange={(e) => setGender(e.target.value)} />
-                    <label><FaUserCircle /> נקבה</label> */}
-                    <button style={{ marginRight: '20px' }}
-                        onClick={() => setGender('זכר')}
-                        className={`gender-button ${gender === 'זכר' ? 'selected' : ''}`}
-                    >
-                        <FaUserCircle /> זכר
-                    </button>
-                    <button
-                        onClick={() => setGender('נקבה')}
-                        className={`gender-button ${gender === 'נקבה' ? 'selected' : ''}`}
-                    >
-                        <FaUserCircle /> נקבה
-                    </button>
-
+                    <label><FaUserCircle /> נקבה</label> 
+    
                     <br />
 
                     {!showResponse ? (<>

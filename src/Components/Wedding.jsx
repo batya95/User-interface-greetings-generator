@@ -5,7 +5,6 @@ import { FaUserFriends, FaUserGraduate, FaUserTie, FaUserCircle } from 'react-ic
 
 const Wedding = (props) => {
   const weddingOptions = [
-    { value: '', label: '----' },
     { value: 'אח', icon: <FaUserFriends />, label: 'אח' },
     { value: 'אחות', icon: <FaUserFriends />, label: 'אחות' },
     { value: 'אחיין', icon: <FaUserGraduate />, label: 'אחיין' },

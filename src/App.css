@@ -162,27 +162,6 @@ input[type="text"]::placeholder {
   text-align: center;
   margin-top: 20px;
 }
-.gender-button {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  padding: 5px 10px;
-  font-size: 12px;
-  width: 70px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.gender-button svg {
-  font-size: 10px;
-  margin-right: 3px;
-}
-
-.gender-button.selected {
-  background-color: white;
-  color: black;
-}
-
 
 
 
