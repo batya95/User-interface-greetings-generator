@@ -47,7 +47,7 @@ input[type="text"]:focus, select:focus {
 }
 
 input[type="text"]::placeholder {
-  color: #888;
+  color: white;
 }
 
 
@@ -80,6 +80,7 @@ input[type="text"]::placeholder {
 .custom-select {
   position: relative;
   display: inline-block;
+  color: white;
 }
 
 .select-icon {
@@ -100,6 +101,7 @@ input[type="text"]::placeholder {
   border: 1px solid #ccc;
   cursor: pointer;
   text-align: center;
+  color: white;
 }
 
 .select-items {
@@ -161,18 +163,26 @@ input[type="text"]::placeholder {
   margin-top: 20px;
 }
 .gender-button {
-  padding: 10px 20px;
-  margin: 0 10px;
-  border: 2px solid #ccc;
   background-color: black;
   color: white;
+  border: 2px solid white;
+  padding: 5px 10px;
+  font-size: 12px;
+  width: 70px;
+  margin: 0 5px;
   cursor: pointer;
 }
 
-.gender-button.selected {
-  border-color:  #410993;
-  background-color:  #410993;
+.gender-button svg {
+  font-size: 10px;
+  margin-right: 3px;
 }
+
+.gender-button.selected {
+  background-color: white;
+  color: black;
+}
+
 
 
 

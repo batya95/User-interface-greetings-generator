@@ -105,18 +105,18 @@ const EventForm = () => {
                     <label><FaUserCircle /> זכר</label>
                     <input type="radio" id="gender" name="gender" value="נקבה" checked={gender === 'נקבה'} onChange={(e) => setGender(e.target.value)} />
                     <label><FaUserCircle /> נקבה</label> */}
-                    <button  style={{ marginRight: '20px' }}
-  onClick={() => setGender('זכר')} 
-  className={gender === 'זכר' ? 'selected' : ''}
->
-  <FaUserCircle /> זכר
-</button>
-<button 
-  onClick={() => setGender('נקבה')} 
-  className={gender === 'נקבה' ? 'selected' : ''}
->
-  <FaUserCircle /> נקבה
-</button>
+                    <button style={{ marginRight: '20px' }}
+                        onClick={() => setGender('זכר')}
+                        className={`gender-button ${gender === 'זכר' ? 'selected' : ''}`}
+                    >
+                        <FaUserCircle /> זכר
+                    </button>
+                    <button
+                        onClick={() => setGender('נקבה')}
+                        className={`gender-button ${gender === 'נקבה' ? 'selected' : ''}`}
+                    >
+                        <FaUserCircle /> נקבה
+                    </button>
 
                     <br />
 
