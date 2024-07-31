@@ -101,12 +101,22 @@ const EventForm = () => {
                 <form action="/promts" onSubmit={handleSubmit} >
                     <label htmlFor="age"><h3>עבור מי הברכה?</h3></label>
                     <input type="text" placeholder='שם:' id="age" value={name} onChange={(e) => setName(e.target.value)} />
-                    <input type="radio" id="gender" name="gender" value="זכר" checked={gender === 'זכר'} onChange={(e) => setGender(e.target.value)} />
-<label><FaUserCircle /> זכר</label>
-
-<input type="radio" id="gender" name="gender" value="נקבה" checked={gender === 'נקבה'} onChange={(e) => setGender(e.target.value)} />
-<label><FaUserCircle /> נקבה</label>
-
+                    {/* <input type="radio" id="gender" name="gender" value="זכר" checked={gender === 'זכר'} onChange={(e) => setGender(e.target.value)} />
+                    <label><FaUserCircle /> זכר</label>
+                    <input type="radio" id="gender" name="gender" value="נקבה" checked={gender === 'נקבה'} onChange={(e) => setGender(e.target.value)} />
+                    <label><FaUserCircle /> נקבה</label> */}
+                    <button  style={{ marginRight: '20px' }}
+  onClick={() => setGender('זכר')} 
+  className={gender === 'זכר' ? 'selected' : ''}
+>
+  <FaUserCircle /> זכר
+</button>
+<button 
+  onClick={() => setGender('נקבה')} 
+  className={gender === 'נקבה' ? 'selected' : ''}
+>
+  <FaUserCircle /> נקבה
+</button>
 
                     <br />
 

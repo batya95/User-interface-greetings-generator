@@ -111,6 +111,7 @@ input[type="text"]::placeholder {
   z-index: 99;
   border: 1px solid #ccc;
   text-align: center;
+  color: white;
 }
 
 .select-items div {
@@ -120,6 +121,7 @@ input[type="text"]::placeholder {
   align-items: center;
   background-color: black;
   text-align: center;
+  color: white;
 }
 
 .select-items div:hover {
@@ -158,6 +160,22 @@ input[type="text"]::placeholder {
   text-align: center;
   margin-top: 20px;
 }
+.gender-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: 2px solid #ccc;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.gender-button.selected {
+  border-color:  #410993;
+  background-color:  #410993;
+}
+
+
+
 
 /* .container{
 
