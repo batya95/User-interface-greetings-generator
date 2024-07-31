@@ -2,9 +2,10 @@ body{
   direction: rtl;
   background-color: black;
 }
-h1 h2 h3 label{
+h1, h2, h3, label {
   color: white;
 }
+
 #white{
   color:red
 }
@@ -29,13 +30,26 @@ select{
   margin-bottom: 10px;
 }
 
-input[type="text"], select {
+input[type="text"],input[type="number"], select {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
+
+input[type="text"]:focus, select:focus {
+  outline: none;
+  border-color: #410993;
+}
+
+input[type="text"]::placeholder {
+  color: #888;
+}
+
 
 .gender-selection {
   display: flex;
