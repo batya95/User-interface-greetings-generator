@@ -111,9 +111,7 @@ const EventForm = () => {
                     <label><FaUserCircle /> זכר</label>
                     <input type="radio" id="gender" name="gender" value="נקבה" checked={gender === 'נקבה'} onChange={(e) => setGender(e.target.value)} />
                     <label><FaUserCircle /> נקבה</label> 
-    
                     <br />
-
                     {!showResponse ? (<>
                         <div className="form-group">
                             <h3>בחר את האירוע שלך:</h3>
@@ -133,9 +131,6 @@ const EventForm = () => {
                                     ) : 'בחירת אירוע'}
                                 </div>
 
-
-
-
                                 {isOpen && (
                                     <div className="select-items">
                                         {eventOptions.map((option) => (
@@ -151,25 +146,25 @@ const EventForm = () => {
                             </div>
                         </div>
 
-
                         {event === 'יומולדת' && <Birthday
                             age={age}
                             setAge={setAge}
                             birthMonth={birthMonth}
                             setBirthMonth={setBirthMonth}
                         ></Birthday>}
+
                         {event === 'הולדת תינוק' && <Baby babyGender={babyGender} setBabyGender={setBabyGender}></Baby>}
+                     
                         {event === 'חתונה' && <Wedding wedding={wedding} setWedding={setWedding}></Wedding>}
+                      
                         {
-                            event != '' && (
+                            event != '' &&
                                 <Types
                                     blessingType={blessingType}
                                     setBlessingType={setBlessingType}
                                     atmosphere={atmosphere}
                                     setAtmosphere={setAtmosphere}
                                 />
-
-                            )
                         }
                     </>) : <div>
                         <div>
@@ -187,7 +182,6 @@ const EventForm = () => {
                             )}
                         </div>
                     </div>}
-
                     {
                         event != '' && !showResponse &&
                         (<button id="write-greeting" type='submit' >

@@ -163,16 +163,6 @@ input[type="text"]::placeholder {
   margin-top: 20px;
 }
 
-
-
-
-/* .container{
-
-  border: 2px solid white;
-  background-color: gray;
-  opacity: 0.5; 
-} */
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -188,9 +178,6 @@ input[type="text"]::placeholder {
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
